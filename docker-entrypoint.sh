@@ -28,7 +28,7 @@ fi
 
 SERVERFILE="/mnt/hgfs/msf/server.php"
 
-if [ @ -z $SERVER_FILE ]; then
+if [ ! -z $SERVER_FILE ]; then
     SERVERFILE=$SERVER_FILE
 fi
 
