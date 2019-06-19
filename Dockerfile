@@ -144,7 +144,7 @@ RUN cd /tmp \
     && chmod +x composer.phar \
     && mv composer.phar /usr/local/bin/composer
 
-WORKDIR /var/www/
+WORKDIR /mnt/hgfs/
 
 EXPOSE 9501
 
