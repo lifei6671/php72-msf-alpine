@@ -59,7 +59,7 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 
 WORKDIR /usr/src/php/ext/
 
-RUN pecl install swoole  4.2.12 \
+RUN pecl install swoole  https://pecl.php.net/get/swoole-4.2.13.tgz \
 	&& pecl install amqp 1.9.4 \
 	&& pecl install imagick 3.4.3 \
 	&& pecl install redis 4.2.0 \
