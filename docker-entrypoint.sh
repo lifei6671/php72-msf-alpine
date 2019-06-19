@@ -32,7 +32,7 @@ if [ ! -z $SERVER_FILE ]; then
     SERVERFILE=$SERVER_FILE
 fi
 
-if [ -f "./composer.json" ]; then
+if [ -f "./composer.json" && ！ -f "./composer.lock"]; then
     composer install
 fi
 
