@@ -139,7 +139,7 @@ RUN echo "extension=ldap.so" > /usr/local/etc/php/conf.d/ldap.ini \
 
 ADD conf/yac.ini /usr/local/etc/php/conf.d/yac.ini
 
-RUN cd /temp \
+RUN cd /tmp \
     && curl -sS https://getcomposer.org/installer | /usr/local/bin/php \
     && chmod +x composer.phar \
     && mv composer.phar /usr/local/bin/composer
