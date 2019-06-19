@@ -36,4 +36,4 @@ if [ -f "./composer.json" && ！ -f "./composer.lock"]; then
     composer install
 fi
 
-php ${SERVERFILE}
+nodemon --exec "php" ${SERVERFILE}

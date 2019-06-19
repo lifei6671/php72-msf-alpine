@@ -105,6 +105,8 @@ RUN apk add --update --no-cache \
 	rabbitmq-c \
     rabbitmq-c-dev \
 	imagemagick-dev \
+	nodejs \
+	npm \
 	&& rm -rf /var/cache/apk/*
 
 #RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing gnu-libiconv
@@ -143,6 +145,8 @@ RUN cd /tmp \
     && curl -sS https://getcomposer.org/installer | /usr/local/bin/php \
     && chmod +x composer.phar \
     && mv composer.phar /usr/local/bin/composer
+
+RUN npm install -g nodemon
 
 WORKDIR /mnt/hgfs/
 
