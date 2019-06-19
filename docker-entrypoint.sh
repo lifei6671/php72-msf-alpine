@@ -32,4 +32,8 @@ if [ ! -z $SERVER_FILE ]; then
     SERVERFILE=$SERVER_FILE
 fi
 
+if [ -f "./composer.json" ]; then
+    composer install
+fi
+
 php ${SERVERFILE}
