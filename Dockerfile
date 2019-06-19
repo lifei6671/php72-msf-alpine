@@ -106,7 +106,7 @@ RUN apk add --update --no-cache \
     rabbitmq-c-dev \
 	imagemagick-dev \
 	nodejs \
-	npm \
+	nodejs-npm \
 	&& rm -rf /var/cache/apk/*
 
 #RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing gnu-libiconv
